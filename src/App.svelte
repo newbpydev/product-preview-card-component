@@ -1,17 +1,22 @@
 <!-- * SCRIPT -->
 <script lang="ts">
-  // your script goes here
-
+  import Attribution from "./components/Attribution.svelte";
   import ProductPreviewCard from "./components/ProductPreviewCard.svelte";
 </script>
 
 <!-- * TEMPLATE -->
 <main>
   <ProductPreviewCard />
+  <!-- <Attribution /> -->
 </main>
-<!-- markup (zero or more items) goes here -->
 
 <!-- * STYLE -->
 <style>
-  /* your styles go here */
+  main {
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    /* margin: 0 auto; */
+  }
 </style>
