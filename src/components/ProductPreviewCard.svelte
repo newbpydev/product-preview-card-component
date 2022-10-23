@@ -46,7 +46,7 @@
   .product-card__img {
     width: 100%;
     height: 24rem;
-    background-image: url("./images/image-product-mobile.jpg");
+    background-image: url("../assets/images/image-product-mobile.jpg");
     background-size: cover;
     /* display: block; */
   }
