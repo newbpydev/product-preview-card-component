@@ -31,7 +31,7 @@ button to add to cart.
 ### Links
 
 - Solution URL: [GitHub](https://github.com/newbpydev/product-preview-card-component)
-- Live Site URL: [Live Site](https://thunderous-pony-ec9a45.netlify.app)
+- Live Site URL: [Live Site](https://darling-pastelito-c7764d.netlify.app/)
 
 ## My process
 
