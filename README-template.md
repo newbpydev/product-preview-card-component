@@ -25,8 +25,8 @@ the ::before and ::after pseudo-elements.
 
 ### Screenshot
 
-![](./src/assets/images/screenshot-desktop.png)
-![](./src/assets/images/screenshot-mobile.png)
+![](./public/images/screenshot-mobile.png)
+![](./public/images/screenshot-desktop.png)
 
 ### Links
 
