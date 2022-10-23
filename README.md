@@ -1,48 +1,87 @@
-# Svelte + TS + Vite
+# Frontend Mentor - Product preview card component solution
 
-This template should help get you started developing with Svelte and TypeScript in Vite.
+This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Recommended IDE Setup
+## Table of contents
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+- [Frontend Mentor - Product preview card component solution](#frontend-mentor---product-preview-card-component-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
-## Need an official Svelte framework?
+## Overview
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+This is my solution to the Product preview card component challenge. It is a simple card
+that shows the image of the product and a description with the price and a
+button to add to cart.
 
-## Technical considerations
+### Screenshot
 
-**Why use this over SvelteKit?**
+![](./public/images/screenshot-mobile.png)
+![](./public/images/screenshot-desktop.png)
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
-  `vite dev` and `vite build` wouldn't work in a SvelteKit environment, for example.
+### Links
 
-This template contains as little as possible to get started with Vite + TypeScript + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+- Solution URL: [GitHub](https://github.com/newbpydev/product-preview-card-component)
+- Live Site URL: [Live Site](https://thunderous-pony-ec9a45.netlify.app)
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+## My process
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+### Built with
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Svelte + Vite
 
-**Why include `.vscode/extensions.json`?**
+### What I learned
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+I have learned on this project that we need to practice everyday and work hard
+to really understand how everything works, specially with the images background.
+I will have to review this topic better.
 
-**Why enable `allowJs` in the TS template?**
-
-While `allowJs: false` would indeed prevent the use of `.js` files in the project, it does not prevent the use of JavaScript syntax in `.svelte` files. In addition, it would force `checkJs: false`, bringing the worst of both worlds: not being able to guarantee the entire codebase is TypeScript, and also having worse typechecking for the existing JavaScript. In addition, there are valid use cases in which a mixed codebase may be relevant.
-
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/rixo/svelte-hmr#svelte-hmr).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```ts
-// store.ts
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
+```css
+.product-card__button {
+  width: 100%;
+  height: 4.8rem;
+  border: none;
+  border-radius: 0.8rem;
+  background: var(--pri-cyan);
+  color: var(--neut-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.161rem;
+  transition: all 0.3s ease;
+}
 ```
+
+### Continued development
+
+For future development, I will continue to use background-image for divs so I
+could practice more the placement of the image in the element.
+
+### Useful resources
+
+- [CSS-TRICKS - Centering CSS Complete Guide](https://css-tricks.com/centering-css-complete-guide/) - If you have two or more block-level elements that need to be centered horizontally in a row, chances are you’d be better served making them a different display type. Here’s an example of making them inline-block and an example of flexbox....
+- [MDN - background-image](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image) - The background-image CSS property sets one or more background images on an element.
+
+## Author
+
+- Website - [Juan Gomez](https://www.newbpydev.com)
+- Frontend Mentor - [@newbpydev](https://www.frontendmentor.io/profile/newbpydev)
+- Twitter - [@Newb_PyDev](https://twitter.com/Newb_PyDev)
+
+## Acknowledgments
+
+The code may not be perfect compared to my sensei @jonasschmedtman but I need
+to thank him because he has shown me the ropes and now I am a confident web
+designer.
