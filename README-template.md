@@ -19,9 +19,9 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ## Overview
 
-This is my solution to the Profile card component challenge. It is a simple card
-that shows the image, name, age, city and stats of a user. I practiced by using
-the ::before and ::after pseudo-elements.
+This is my solution to the Product preview card component challenge. It is a simple card
+that shows the image of the product and a description with the price and a
+button to add to cart.
 
 ### Screenshot
 
@@ -31,7 +31,7 @@ the ::before and ::after pseudo-elements.
 ### Links
 
 - Solution URL: [GitHub](https://github.com/newbpydev/product-preview-card-component)
-- Live Site URL: [Live Site](https://gifted-hopper-c0d2a1.netlify.app/)
+- Live Site URL: [Live Site](https://thunderous-pony-ec9a45.netlify.app)
 
 ## My process
 
@@ -40,44 +40,39 @@ the ::before and ::after pseudo-elements.
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- Grid
+- Svelte + Vite
 
 ### What I learned
 
 I have learned on this project that we need to practice everyday and work hard
-to really understand how you could manipulate the elements the way that you
-planned it.
+to really understand how everything works, specially with the images background.
+I will have to review this topic better.
 
 ```css
-main::before {
-  content: url("/images/bg-pattern-top.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  bottom: 50%;
-  right: 50%;
-  z-index: -1;
-}
-main::after {
-  content: url("/images/bg-pattern-top.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 50%;
-  left: 50;
-  z-index: -2;
+.product-card__button {
+  width: 100%;
+  height: 4.8rem;
+  border: none;
+  border-radius: 0.8rem;
+  background: var(--pri-cyan);
+  color: var(--neut-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.161rem;
+  transition: all 0.3s ease;
 }
 ```
 
 ### Continued development
 
-For future development, I will continue to use pseudo-elements more often so I
-can practice the different ways that we can use it in our day to day development.
+For future development, I will continue to use background-image for divs so I
+could practice more the placement of the image in the element.
 
 ### Useful resources
 
-- [MDN - ::before](https://developer.mozilla.org/en-US/docs/Web/CSS/::before) - The In CSS, ::before creates a pseudo-element that is the first child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default.
-- [MDN - ::after](https://developer.mozilla.org/en-US/docs/Web/CSS/::after) - In CSS, ::after creates a pseudo-element that is the last child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default.
+- [CSS-TRICKS - Centering CSS Complete Guide](https://css-tricks.com/centering-css-complete-guide/) - If you have two or more block-level elements that need to be centered horizontally in a row, chances are you’d be better served making them a different display type. Here’s an example of making them inline-block and an example of flexbox....
+- [MDN - background-image](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image) - The background-image CSS property sets one or more background images on an element.
 
 ## Author
 
