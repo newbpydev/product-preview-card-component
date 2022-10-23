@@ -142,7 +142,7 @@
     .product-card__img {
       height: 45rem;
       width: 30rem;
-      background-image: url("./images/image-product-desktop.jpg");
+      background-image: url("../assets/images/image-product-desktop.jpg");
       background-position: center;
 
       background-size: cover;
